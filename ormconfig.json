@@ -1,0 +1,18 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "",
+  "database": "nlw4",
+  "synchronize": true,
+  "entities": [
+      "./src/models/*.ts"
+  ],
+  "migrations": [
+     "./src/database/migrations/*.ts"
+  ],
+  "cli": { 
+      "migrationsDir": "./src/database/migrations" 
+  }
+}
